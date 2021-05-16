@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  overflow: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(25, 25, 25);
+  font-size: 16px;
+}
+
+main {
+  min-width: 280px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(0, 255, 151);
+  text-align: center;
+}
+
+#clock {
+  font-size: 2.5rem;
+}
+
+#day {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.buttonsLine {
+  display: inline-flex;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+button:first-child {
+  margin-right: 2em;
+}
+
+button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+button:active,
+button:focus {
+  color: rgb(0, 255, 151);
+  outline: none;
+}
+
+.active {
+  color: rgb(0, 255, 151);
+}
+
+.inactive {
+  color: whitesmoke;
+}
+
+@media only screen and (min-width: 720px) {
+  html,
+  body {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  html,
+  body {
+    font-size: 50px;
+  }
+}
