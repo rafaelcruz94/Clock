@@ -65,14 +65,14 @@ window.addEventListener("load", () => {
   document.getElementById('24h').classList.add('active');
 });
 
-let vinteQuatro = document.getElementById('24h').addEventListener('click', () => {
+let twentyFour = document.getElementById('24h').addEventListener('click', () => {
   document.getElementById('24h').classList.add('active');
   document.getElementById('12h').classList.remove('active');
   clearInterval(timer);
   timer = setInterval(twentyFourHours, 1000);
 });
 
-let doze = document.getElementById('12h').addEventListener('click', () => {
+let twelve = document.getElementById('12h').addEventListener('click', () => {
   document.getElementById('12h').classList.add('active');
   document.getElementById('24h').classList.remove('active');
   clearInterval(timer);
